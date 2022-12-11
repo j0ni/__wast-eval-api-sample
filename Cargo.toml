@@ -10,3 +10,6 @@ edition = "2021"
 wasmer = "3.0"
 # error handling
 anyhow = "1.0"
+#web server
+actix-web = "4.2.1"
+serde = { version = "1.0.149", features = ["derive"] }
