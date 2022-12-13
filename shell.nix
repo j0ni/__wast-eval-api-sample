@@ -4,7 +4,7 @@ let
     extensions = [ "rust-src" ];
   };
 in pkgs.mkShell {
-  nix_shell_name = "wasmer";
+  name = "wasmer";
   buildInputs = [
     rust-stable
     pkgs.openssl

@@ -1,6 +1,7 @@
 # -*- mode: restclient; url-max-redirections: 0 -*-
 
+:content := (shell-command-to-string "./make_wast.sh" )
 POST http://localhost:8080/eval
 Content-type: application/json
 
-< ./wast.json
+:content
